@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* titolo */
+header {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+header>h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: rgb(254, 70, 101);
+    padding: 2rem;
+}
+
+/* testo */
+nav {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+nav>p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+}
+
+/* blocchi */
+main {
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    float: left;
+    padding: 1rem;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 1rem;
+}
+
+.container>img {
+    width: 8rem;
+    height: 8rem;
+    float: left;
+    background-color: azure;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container>.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    width: 20rem;
+    height: 8rem;
+    background-color: rgb(7, 2, 27);
+    padding: 1rem;
+    float: left;
+}
+
+.text>h2,
+p,
+a {
+    padding-bottom: 0.7rem;
+}
+
+.text>h2,
+p {
+    color: white;
+}
+
+.text>a {
+    color: rgb(0, 132, 255);
+}
